@@ -23,5 +23,4 @@ EXPOSE 6800
 ENV CLASSPATH="app:app/*"
 ENV MAIN_CLASS=com.jfrog.sample.Hello
 
-#CMD ["sh","-c","java -cp app:app/* com.jfrog.sample.Hello"]
 CMD ["sh","-c","java -cp ${CLASSPATH} ${MAIN_CLASS}"]
