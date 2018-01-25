@@ -18,7 +18,7 @@ node {
 		buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean package' 
 		buildInfo.env.capture = true
 		buildInfo.retention maxBuilds: 10
-		rtMaven.deployer.deployArtifacts buildInfo
+		// rtMaven.deployer.deployArtifacts buildInfo
 		// server.publishBuildInfo buildInfo
     }
     stage('Docker Image') {
