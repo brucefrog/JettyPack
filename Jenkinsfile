@@ -25,7 +25,7 @@ node {
     		sh 'printenv'
 		def dockerImage = docker.build(buildImage)
 		dockerImage.tag("latest")
-		// dockerImage.push()
+		// dockerImage.push() 
 		def dockInfo = artDocker.push buildImage, 'docker', buildInfo 
 		// dockerImage.push("latest")
 		artDocker.push image+":latest", 'docker'
