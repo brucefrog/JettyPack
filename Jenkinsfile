@@ -8,7 +8,7 @@ node {
 	
     stage('Checkout') {
     		// Get some code from a GitHub repository
-		git 'https://github.com/brucefrog/JettyWorld'
+		git 'https://github.com/brucefrog/JettyPack'
     }
     stage('Package') {
 		// Setup Artifactory resolution
