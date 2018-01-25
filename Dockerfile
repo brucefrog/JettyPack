@@ -16,7 +16,7 @@ COPY --chown=jetson bin/$BUILD_JAR "$APP_HOME/$APP_JAR"
 RUN mkdir -p "$APP_HOME/depend"
 COPY --chown=jetson bin/dependency/ "$APP_HOME/depend"
 
-WORKDIR "$APP_HOME"
+WORKDIR "$APP_HOME" 
 
 USER jetson
 EXPOSE 6800

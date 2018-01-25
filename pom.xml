@@ -13,6 +13,7 @@
 		<developerConnection>brucefrog</developerConnection>
 	</scm>
 	
+
 	<build>
 		<directory>bin</directory>
 		<outputDirectory>bin/classes</outputDirectory>
